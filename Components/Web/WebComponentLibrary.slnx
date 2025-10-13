@@ -4,5 +4,7 @@
   </Folder>
   <Folder Name="/Domain/" />
   <Folder Name="/Infrastructure/" />
-  <Folder Name="/Presentation/" />
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/WebComponentLibrary/WebComponentLibrary.csproj" />
+  </Folder>
 </Solution>

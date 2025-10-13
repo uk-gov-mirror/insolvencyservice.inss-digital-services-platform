@@ -40,7 +40,7 @@ namespace WebComponentLibrary.Components.TextInput
             }
             else
             {
-                builder.AddAttribute(3, "class", "text-success");
+                builder.AddAttribute(3, "class", GdsCssClass);
             }
             builder.AddAttribute(4, "value", CurrentValueAsString);
             builder.AddAttribute(5, "onchange", EventCallback.Factory.CreateBinder<string?>(this, __value => CurrentValueAsString = __value, CurrentValueAsString));
