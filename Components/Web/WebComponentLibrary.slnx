@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="Application/TestApp/TestApp.csproj" Id="464a9040-869a-4917-b127-b0b033d5171b" />
+  </Folder>
+  <Folder Name="/Domain/" />
+  <Folder Name="/Infrastructure/" />
+  <Folder Name="/Presentation/" />
+</Solution>

@@ -1,0 +1,38 @@
+﻿@page "/Test"
+@using WebComponentLibrary.Components.TextInput
+ 
+ 
+<h3>ComponentTestPage</h3>
+ 
+<EditForm Formname="TestForm" Model="Input" OnSubmit="Submit">
+<DataAnnotationsValidator />
+<ValidationSummary />
+ 
+    <TextInput @bind-Value="Input!.Name" />
+ 
+    @* <SWInputText Label="Description" @bind-Value="Input!.Description" ValidationFor="@(() => Input.Description)" /> *@
+ 
+    <button type="submit" class="d-block mt-3">Save</button>
+</EditForm>
+ 
+@code {
+    [SupplyParameterFromForm] public MyModel? Input { get; set; }
+    public string? Result { get; set; }
+ 
+    protected override void OnInitialized()
+    {
+        Input ??= new MyModel();
+ 
+        base.OnInitialized();
+    }
+ 
+    private void Submit()
+    {
+        Result = $"Name: {Input!.Name}, Description: {Input!.Description}";
+    }
+    public class MyModel
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+    }
+}
