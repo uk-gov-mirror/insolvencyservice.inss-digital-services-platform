@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="Application/Inns.UserManagement.Application/Inns.UserManagement.Application.csproj" Id="5dfd65c8-7af9-4a5e-b588-bbca0d0594dd" />
+    <Project Path="Application/Inss.UserManagement.Application.Contracts/Inss.UserManagement.Application.Contracts.csproj" Id="29424691-847f-44cc-8c6b-b473340fe3f7" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="Domain/Inss.UserMagament.Domain.Models/Inss.UserManagement.Domain.Models.csproj" />
+    <Project Path="Domain/Inss.UserManagement.Domain.Shared/Inss.UserManagement.Domain.Shared.csproj" Id="01ba84aa-3103-47c5-bec5-5103054cadb1" />
+    <Project Path="Inss.UserManagement.Domain.Services/Inss.UserManagement.Domain.Services.csproj" Id="6ec18acd-fea5-4924-87ab-8e672fb742c0" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/Inss.UserManagement.EntityFrameworkCore/Inss.UserManagement.EntityFrameworkCore.csproj" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/Inss.UserManagement.WebApp.csproj" />
+  </Folder>
+  <Folder Name="/Tests/" />
+</Solution>
